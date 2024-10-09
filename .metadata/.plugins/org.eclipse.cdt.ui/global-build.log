@@ -1,0 +1,4086 @@
+00:28:26 **** Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+../pwm.c: In function 'PWM_Timer0_Start':
+../pwm.c:13: error: 'TCCR0' undeclared (first use in this function)
+../pwm.c:13: error: (Each undeclared identifier is reported only once
+../pwm.c:13: error: for each function it appears in.)
+../pwm.c:13: error: 'WGM00' undeclared (first use in this function)
+../pwm.c:14: error: 'WGM01' undeclared (first use in this function)
+make: *** [pwm.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:31:16 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:06:10 **** Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+../lm35_sensor.c: In function 'LM35_getTemperature':
+../lm35_sensor.c:30: error: 'ADC_REF_VOLT_VALUE' undeclared (first use in this function)
+../lm35_sensor.c:30: error: (Each undeclared identifier is reported only once
+../lm35_sensor.c:30: error: for each function it appears in.)
+../lm35_sensor.c:30: error: 'ADC_MAXIMUM_VALUE' undeclared (first use in this function)
+make: *** [lm35_sensor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:08:20 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+../lm35_sensor.c: In function 'LM35_getTemperature':
+../lm35_sensor.c:30: error: 'ADC_MAXIMUM_VALUE' undeclared (first use in this function)
+../lm35_sensor.c:30: error: (Each undeclared identifier is reported only once
+../lm35_sensor.c:30: error: for each function it appears in.)
+make: *** [lm35_sensor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:12:26 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../adc.c:10:
+../adc.h:34:2: error: #endif without #if
+make: *** [adc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:12:56 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:31:32 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../ldr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ldr.d" -MT"ldr.o" -c -o "ldr.o" "../ldr.c"
+Finished building: ../ldr.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+01:54:34 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../ldr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ldr.d" -MT"ldr.o" -c -o "ldr.o" "../ldr.c"
+Finished building: ../ldr.c
+ 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:12:41 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+../led.c: In function 'LEDS_init':
+../led.c:15: error: expected declaration specifiers or '...' before numeric constant
+../led.c:15: error: expected declaration specifiers or '...' before numeric constant
+../led.c:15: error: expected declaration specifiers or '...' before 'OUTPUT'
+../led.c:15: error: conflicting types for 'GPIO_setupPinDirection'
+../led.c:15: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../gpio.h:60: error: previous declaration of 'GPIO_setupPinDirection' was here
+../led.c:16: error: expected declaration specifiers or '...' before numeric constant
+../led.c:16: error: expected declaration specifiers or '...' before numeric constant
+../led.c:16: error: expected declaration specifiers or '...' before 'OUTPUT'
+../led.c:17: error: expected declaration specifiers or '...' before numeric constant
+../led.c:17: error: expected declaration specifiers or '...' before numeric constant
+../led.c:17: error: expected declaration specifiers or '...' before 'OUTPUT'
+../led.c:19: error: expected declaration specifiers or '...' before numeric constant
+../led.c:19: error: expected declaration specifiers or '...' before numeric constant
+../led.c:19: error: expected declaration specifiers or '...' before numeric constant
+../led.c:19: error: conflicting types for 'GPIO_writePin'
+../led.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../gpio.h:68: error: previous declaration of 'GPIO_writePin' was here
+make: *** [led.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:13:05 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+../led.c: In function 'LEDS_init':
+../led.c:15: warning: parameter names (without types) in function declaration
+../led.c:15: error: conflicting types for 'GPIO_setupPinDirection'
+../led.c:15: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../gpio.h:60: error: previous declaration of 'GPIO_setupPinDirection' was here
+../led.c:16: warning: parameter names (without types) in function declaration
+../led.c:17: warning: parameter names (without types) in function declaration
+../led.c:19: warning: parameter names (without types) in function declaration
+../led.c:19: error: conflicting types for 'GPIO_writePin'
+../led.c:19: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../gpio.h:68: error: previous declaration of 'GPIO_writePin' was here
+make: *** [led.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:14:17 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+../led.c: In function 'LEDS_init':
+../led.c:16: error: 'OUTPUT' undeclared (first use in this function)
+../led.c:16: error: (Each undeclared identifier is reported only once
+../led.c:16: error: for each function it appears in.)
+make: *** [led.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:15:17 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:21:38 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+../led.c: In function 'LED_off':
+../led.c:28: warning: implicit declaration of function 'PIO_writePin'
+Finished building: ../led.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+./led.o: In function `LEDS_init':
+../led.c:18: undefined reference to `PIO_writePin'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:23:25 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+../led.c: In function 'LED_off':
+../led.c:28: warning: implicit declaration of function 'PIO_writePin'
+Finished building: ../led.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+./led.o: In function `LEDS_init':
+../led.c:20: undefined reference to `PIO_writePin'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:23:31 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+../led.c: In function 'LED_off':
+../led.c:28: warning: implicit declaration of function 'PIO_writePin'
+Finished building: ../led.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+./led.o: In function `LEDS_init':
+../led.c:18: undefined reference to `PIO_writePin'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+02:24:07 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:26:07 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../ldr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ldr.d" -MT"ldr.o" -c -o "ldr.o" "../ldr.c"
+Finished building: ../ldr.c
+ 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:31:34 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:31:46 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:05:15 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dcmotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"dcmotor.d" -MT"dcmotor.o" -c -o "dcmotor.o" "../dcmotor.c"
+Finished building: ../dcmotor.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../ldr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ldr.d" -MT"ldr.o" -c -o "ldr.o" "../ldr.c"
+Finished building: ../ldr.c
+ 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./dcmotor.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:03:49 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dcmotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"dcmotor.d" -MT"dcmotor.o" -c -o "dcmotor.o" "../dcmotor.c"
+../dcmotor.c: In function 'DcMotor_Rotate':
+../dcmotor.c:41: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dcmotor.c
+ 
+Building file: ../flame.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"flame.d" -MT"flame.o" -c -o "flame.o" "../flame.c"
+Finished building: ../flame.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../ldr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ldr.d" -MT"ldr.o" -c -o "ldr.o" "../ldr.c"
+Finished building: ../ldr.c
+ 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./pwm.o   
+c:/users/ali/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [smarthome.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:29:34 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dcmotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"dcmotor.d" -MT"dcmotor.o" -c -o "dcmotor.o" "../dcmotor.c"
+../dcmotor.c: In function 'DcMotor_Rotate':
+../dcmotor.c:41: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dcmotor.c
+ 
+Building file: ../flame.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"flame.d" -MT"flame.o" -c -o "flame.o" "../flame.c"
+Finished building: ../flame.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:143: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../ldr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ldr.d" -MT"ldr.o" -c -o "ldr.o" "../ldr.c"
+Finished building: ../ldr.c
+ 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'lighting_control':
+../main.c:19: warning: implicit declaration of function 'LDR_getLightIntensity'
+Finished building: ../main.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9952 bytes (30.4% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:31:09 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9952 bytes (30.4% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:00:48 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../ldr.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ldr.d" -MT"ldr.o" -c -o "ldr.o" "../ldr.c"
+Finished building: ../ldr.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'lighting_control':
+../main.c:19: warning: implicit declaration of function 'LDR_getLightIntensity'
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10014 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:07:03 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'lighting_control':
+../main.c:19: warning: implicit declaration of function 'LDR_getLightIntensity'
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10018 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:10:25 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10018 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:14:59 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10042 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:16:08 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10042 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:16:23 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10042 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:17:47 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10070 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:18:56 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10070 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:19:10 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10042 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:20:34 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"led.d" -MT"led.o" -c -o "led.o" "../led.c"
+Finished building: ../led.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10042 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:29:19 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10042 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:33:56 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10042 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:40:29 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10056 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:43:49 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10070 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:44:14 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10084 bytes (30.8% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:48:31 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9970 bytes (30.4% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:09 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10056 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:59:41 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10062 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:10:49 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10056 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:24:34 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../dcmotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"dcmotor.d" -MT"dcmotor.o" -c -o "dcmotor.o" "../dcmotor.c"
+../dcmotor.c: In function 'DcMotor_Rotate':
+../dcmotor.c:41: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dcmotor.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10056 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:27:34 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10062 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:35:44 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:37:27 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:38:30 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:39:18 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:40:13 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:40:40 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:41:20 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:47:33 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:16:12 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:16:46 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9858 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:20:04 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9984 bytes (30.5% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:28:57 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9984 bytes (30.5% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:52:41 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9826 bytes (30.0% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:53:30 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9886 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:54:29 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9878 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:55:21 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9882 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:55:37 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9886 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:56:22 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9882 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:57:28 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9866 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:57:35 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9870 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:57:45 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9864 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:58:12 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9870 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:58:58 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9792 bytes (29.9% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:00:29 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9854 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:02:59 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../dcmotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"dcmotor.d" -MT"dcmotor.o" -c -o "dcmotor.o" "../dcmotor.c"
+../dcmotor.c: In function 'DcMotor_Rotate':
+../dcmotor.c:41: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dcmotor.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9746 bytes (29.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:03:04 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9750 bytes (29.8% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:06:49 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../dcmotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"dcmotor.d" -MT"dcmotor.o" -c -o "dcmotor.o" "../dcmotor.c"
+../dcmotor.c: In function 'DcMotor_Rotate':
+../dcmotor.c:30: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dcmotor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9850 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:09:21 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9848 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:10:06 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9768 bytes (29.8% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:10:11 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9764 bytes (29.8% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:05:39 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9768 bytes (29.8% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:06:44 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9760 bytes (29.8% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:07:18 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9758 bytes (29.8% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:07:36 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9848 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:14:37 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../dcmotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"dcmotor.d" -MT"dcmotor.o" -c -o "dcmotor.o" "../dcmotor.c"
+../dcmotor.c: In function 'DcMotor_Rotate':
+../dcmotor.c:30: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dcmotor.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9852 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:16:51 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+../pwm.c: In function 'PWM_Timer0_Start':
+../pwm.c:17: error: stray '\240' in program
+make: *** [pwm.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:17:35 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9852 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:20:29 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9900 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:20:39 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../dcmotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"dcmotor.d" -MT"dcmotor.o" -c -o "dcmotor.o" "../dcmotor.c"
+../dcmotor.c: In function 'DcMotor_Rotate':
+../dcmotor.c:30: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dcmotor.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9902 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:21:26 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9902 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:23:00 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9898 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:26:46 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9898 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:31:07 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10146 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:33:54 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'automatic_fan_speed':
+../main.c:47: warning: unused variable 'temperature'
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10056 bytes (30.7% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:34:15 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'automatic_fan_speed':
+../main.c:47: warning: unused variable 'temperature'
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9816 bytes (30.0% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:34:46 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9808 bytes (29.9% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:35:52 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9822 bytes (30.0% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:36:52 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9820 bytes (30.0% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:37:17 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9808 bytes (29.9% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:37:21 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9804 bytes (29.9% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:37:40 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9804 bytes (29.9% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:46:31 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10140 bytes (30.9% Full)
+(.text + .data + .bootloader)
+
+Data:        264 bytes (12.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:25:49 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../dcmotor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"dcmotor.d" -MT"dcmotor.o" -c -o "dcmotor.o" "../dcmotor.c"
+../dcmotor.c: In function 'DcMotor_Rotate':
+../dcmotor.c:30: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dcmotor.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'lcd_display':
+../main.c:83: error: expected expression before ',' token
+../main.c:85: error: expected ';' before '}' token
+../main.c:79: warning: unused variable 'lighting'
+../main.c:78: warning: unused variable 'temperature'
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:28:18 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'lcd_display':
+../main.c:79: warning: unused variable 'lighting'
+../main.c:78: warning: unused variable 'temperature'
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10272 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:        283 bytes (13.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:33:38 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'lcd_display':
+../main.c:80: warning: unused variable 'lighting'
+../main.c:79: warning: unused variable 'temperature'
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10320 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:43:52 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'lcd_display':
+../main.c:81: warning: unused variable 'lighting'
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10400 bytes (31.7% Full)
+(.text + .data + .bootloader)
+
+Data:        321 bytes (15.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:48:57 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'lcd_display':
+../main.c:81: warning: unused variable 'lighting'
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10494 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        329 bytes (16.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:52:40 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10586 bytes (32.3% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:52:54 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10586 bytes (32.3% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:58:19 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10618 bytes (32.4% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:00:52 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10604 bytes (32.4% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:07:35 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10656 bytes (32.5% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:08:40 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10708 bytes (32.7% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:20:32 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10468 bytes (31.9% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:13:05 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10468 bytes (31.9% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:19:05 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10468 bytes (31.9% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:22:47 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10708 bytes (32.7% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:27:16 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10468 bytes (31.9% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:27:46 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10708 bytes (32.7% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:28:02 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10708 bytes (32.7% Full)
+(.text + .data + .bootloader)
+
+Data:        335 bytes (16.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:37:46 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10574 bytes (32.3% Full)
+(.text + .data + .bootloader)
+
+Data:        337 bytes (16.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:38:42 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10580 bytes (32.3% Full)
+(.text + .data + .bootloader)
+
+Data:        337 bytes (16.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:40:31 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10468 bytes (31.9% Full)
+(.text + .data + .bootloader)
+
+Data:        337 bytes (16.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:45:40 **** Incremental Build of configuration Debug for project smarthome ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:18:
+c:/users/ali/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: smarthome.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,smarthome.map -mmcu=atmega32 -o "smarthome.elf"  ./adc.o ./buzzer.o ./dcmotor.o ./flame.o ./gpio.o ./lcd.o ./ldr.o ./led.o ./lm35_sensor.o ./main.o ./pwm.o   
+Finished building target: smarthome.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S smarthome.elf  >"smarthome.lss"
+Finished building: smarthome.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex smarthome.elf  "smarthome.hex"
+Finished building: smarthome.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 smarthome.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10468 bytes (31.9% Full)
+(.text + .data + .bootloader)
+
+Data:        337 bytes (16.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

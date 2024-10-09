@@ -1,0 +1,14 @@
+/*
+ * led.c
+ *
+ *  Created on: Oct 6, 2024
+ *      Author: ALI
+ */
+
+#include "common_macros.h"
+#include <avr/io.h>
+#include "gpio.h"
+
+void LEDS_init(void){
+
+}

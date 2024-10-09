@@ -1,0 +1,16 @@
+/*
+ * pwm.c
+ *
+ *  Created on: Oct 4, 2024
+ *      Author: ALI
+ */
+#include "pwm.h"
+#include "gpio.h"
+#include "common_macros.h"
+
+void PWM_Timer0_Start(uint8 duty_cycle){
+	/* init pwm timer0*/
+	SET_BIT(timerCounterControlRegister,WGM00);
+	SET_BIT(timerCounterControlRegister,WGM01);
+
+}

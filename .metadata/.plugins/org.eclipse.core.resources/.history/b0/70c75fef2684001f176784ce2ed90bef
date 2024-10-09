@@ -1,0 +1,76 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 6, 2024
+ *      Author: ALI
+ */
+#include "adc.h"
+#include "pwm.h"
+#include "gpio.h"
+#include "lcd.h"
+#include "led.h"
+#include "buzzer.h"
+#include "lm35_sensor.h"
+#include "flame.h"
+#include "dcmotor.h"
+
+
+void lighting_control(void){
+	uint8 lighting = LDR_getLightIntensity();
+	if(lighting <= 15){
+		LED_on(LED_RED_PIN);
+		LED_on(LED_BLUE_PIN);
+		LED_on(LED_GREEN_PIN);
+	}
+	else if(lighting > 15 && lighting<= 50){
+		LED_on(LED_RED_PIN);
+		LED_off(LED_BLUE_PIN);
+		LED_on(LED_GREEN_PIN);
+	}
+	else if(lighting > 50 && lighting <=70){
+		LED_on(LED_RED_PIN);
+		LED_off(LED_BLUE_PIN);
+		LED_off(LED_GREEN_PIN);
+	}
+	else{
+		LED_off(LED_RED_PIN);
+		LED_off(LED_BLUE_PIN);
+		LED_off(LED_GREEN_PIN);
+	}
+}
+
+
+void automatic_fan_speed(void){
+	uint8 temperature = LM35_getTemperature();
+	if(temperature < 25){
+		DcMotor_Rotate(STOP, 0);
+	}
+	else if(temperature >=25 && temperature <30){
+		DcMotor_Rotate(CLOCKWISE, 25);
+	}
+	else if(temperature >=30 && temperature <40){
+			DcMotor_Rotate(CLOCKWISE, 50);
+		}
+	else if(temperature >=40 && temperature <50){
+			DcMotor_Rotate(CLOCKWISE, 75);
+		}
+	else {
+			DcMotor_Rotate(CLOCKWISE, 100);
+		}
+}
+
+
+int main(void){
+	ADC_init();
+	Buzzer_init();
+	DcMotor_Init();
+	FlameSensor_init();
+	LCD_init();
+	LEDS_init();
+
+	while(1){
+		lighting_control();
+
+	}
+}
+

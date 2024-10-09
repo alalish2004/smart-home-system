@@ -1,0 +1,35 @@
+/*
+ * pwm.c
+ *
+ *  Created on: Oct 4, 2024
+ *      Author: ALI
+ */
+#include <avr/io.h>
+#include "pwm.h"
+#include "gpio.h"
+#include "common_macros.h"
+
+
+void PWM_Timer0_Start(uint8 duty_cycle){
+
+	duty_cycle = (duty_cycle * 255)/100;
+	/* init pwm timer0*/
+	/*first to make it fast pwm*/
+	SET_BIT(timerCounterControlRegister,WGM00);
+	SET_BIT(timerCounterControlRegister,WGM01);
+	/* non inverting mode */
+	SET_BIT(timerCounterControlRegister,COM01);
+	CLEAR_BIT(timerCounterControlRegister,COM00);
+	/* prescaler set to 1024 */
+	SET_BIT(timerCounterControlRegister,CS00);
+	CLEAR_BIT(timerCounterControlRegister,CS01);
+	SET_BIT(timerCounterControlRegister,CS02);
+	/* make the timer start from 0 */
+	timerCounterregister = 0;
+	/* set outputcompare to generate wave form */
+	outputCompareRegister = duty_cycle;
+	/* disable interupts of compare mode and overflow */
+	CLEAR_BIT(timerInterruptMaskRegister, OCIE0);
+	CLEAR_BIT(timerInterruptMaskRegister, TOIE0);
+	}
+

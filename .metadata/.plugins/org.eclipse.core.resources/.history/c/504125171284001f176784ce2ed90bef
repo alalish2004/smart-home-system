@@ -1,0 +1,17 @@
+/*
+ * buzzer.c
+ *
+ *  Created on: Oct 6, 2024
+ *      Author: ALI
+ */
+
+
+void Buzzer_init(void){
+	GPIO_setupPinDirection(BUZZER_port, BUZZER_pin, PIN_OUTPUT);
+}
+void Buzzer_on(void){
+
+}
+void Buzzer_off(void){
+
+}

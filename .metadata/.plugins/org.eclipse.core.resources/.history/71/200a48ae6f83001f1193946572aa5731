@@ -1,0 +1,21 @@
+/*
+ * led.c
+ *
+ *  Created on: Oct 6, 2024
+ *      Author: ALI
+ */
+
+#include "common_macros.h"
+#include <avr/io.h>
+#include "gpio.h"
+#include "led.h"
+
+
+void LEDS_init(void){
+	               /* FIRST SET ALL PINS TO OUTPUT */
+	 GPIO_setupPinDirection(LED_PORT_ID, LED_RED_PIN, OUTPUT);
+	 GPIO_setupPinDirection(LED_PORT_ID, LED_GREEN_PIN, OUTPUT);
+	 GPIO_setupPinDirection(LED_PORT_ID, LED_BLUE_PIN, OUTPUT);
+	                 /* TURN OFF ALL THE LEDS */
+	 GPIO_writePin(LED_PORT_ID, LED_RED_PIN, led_off);
+}

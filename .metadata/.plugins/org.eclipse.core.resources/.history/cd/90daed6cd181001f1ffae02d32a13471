@@ -1,0 +1,24 @@
+/*
+ * pwm.c
+ *
+ *  Created on: Oct 4, 2024
+ *      Author: ALI
+ */
+#include <avr/io.h>
+#include "pwm.h"
+#include "gpio.h"
+#include "common_macros.h"
+
+
+void PWM_Timer0_Start(uint8 duty_cycle){
+	/* init pwm timer0*/
+	/*first to make it fast pwm*/
+	SET_BIT(timerCounterControlRegister,WGM00);
+	SET_BIT(timerCounterControlRegister,WGM01);
+	/* non inverting mode */
+	SET_BIT(timerCounterControlRegister,COM01);
+	CLEAR_BIT(timerCounterControlRegister,COM00);
+
+
+
+}
